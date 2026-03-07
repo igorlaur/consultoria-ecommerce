@@ -1,15 +1,23 @@
 ﻿import React from 'react';
 import { motion } from 'framer-motion';
 
+const niches = {
+  black: { label: 'Nicho Black', color: 'bg-black text-white' },
+  moda: { label: 'Moda', color: 'bg-pink-100 text-pink-700' },
+  delivery: { label: 'Delivery', color: 'bg-red-100 text-red-700' },
+  ecommerce: { label: 'E-commerce', color: 'bg-orange-100 text-orange-700' },
+  video: { label: 'Vídeo', color: 'bg-purple-100 text-purple-700' },
+};
+
 const marketplaces = [
-  { name: 'Mercado Livre', emoji: '🟡', desc: 'Loja Oficial FULL e FLEX', color: 'bg-yellow-50 border-yellow-200' },
-  { name: 'Shopee', emoji: '🟠', desc: 'Marketplace em crescimento', color: 'bg-orange-50 border-orange-200' },
-  { name: 'Magalu', emoji: '🔵', desc: 'Marketplace nacional', color: 'bg-orange-50 border-orange-200' },
-  { name: 'Shein', emoji: '🌸', desc: 'Moda e vestuário', color: 'bg-pink-50 border-pink-200' },
-  { name: 'iFood', emoji: '🍔', desc: 'Delivery de alimentos', color: 'bg-red-50 border-red-200' },
-  { name: 'Rappi', emoji: '🛵', desc: 'Delivery multicanal', color: 'bg-orange-50 border-orange-200' },
-  { name: 'Kwai', emoji: '🎬', desc: 'Plataforma de vídeos', color: 'bg-purple-50 border-purple-200' },
-  { name: 'Site Próprio', emoji: '🌐', desc: 'E-commerce proprietário', color: 'bg-green-50 border-green-200' },
+  { name: 'Mercado Livre', emoji: '🟡', desc: 'Loja Oficial FULL e FLEX', tags: ['black', 'ecommerce'] },
+  { name: 'Shopee', emoji: '🟠', desc: 'Marketplace em crescimento', tags: ['black', 'moda', 'ecommerce'] },
+  { name: 'Magalu', emoji: '🔵', desc: 'Marketplace nacional', tags: ['black', 'ecommerce'] },
+  { name: 'Shein', emoji: '🌸', desc: 'Moda e vestuário', tags: ['moda'] },
+  { name: 'iFood', emoji: '🍔', desc: 'Delivery de nicho black e moda', tags: ['black', 'moda', 'delivery'] },
+  { name: 'Rappi', emoji: '🛵', desc: 'Delivery de nicho black e moda', tags: ['black', 'moda', 'delivery'] },
+  { name: 'Kwai', emoji: '🎬', desc: 'Vendas via vídeos curtos', tags: ['black', 'moda', 'ecommerce'] },
+  { name: 'Site Próprio', emoji: '🌐', desc: 'E-commerce proprietário', tags: ['black', 'moda', 'ecommerce'] },
 ];
 
 const Marketplaces = () => (
@@ -32,7 +40,14 @@ const Marketplaces = () => (
           >
             <div className="text-4xl mb-3">{mkt.emoji}</div>
             <div className="font-bold text-white text-base">{mkt.name}</div>
-            <div className="text-slate-400 text-xs mt-1">{mkt.desc}</div>
+            <div className="text-slate-400 text-xs mt-1 mb-3">{mkt.desc}</div>
+            <div className="flex flex-wrap justify-center gap-1">
+              {mkt.tags.map(tag => (
+                <span key={tag} className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${niches[tag].color}`}>
+                  {niches[tag].label}
+                </span>
+              ))}
+            </div>
           </motion.div>
         ))}
       </div>
