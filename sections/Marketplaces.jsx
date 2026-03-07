@@ -10,14 +10,14 @@ const niches = {
 };
 
 const marketplaces = [
-  { name: 'Mercado Livre', emoji: '🟡', desc: 'Loja Oficial FULL e FLEX', tags: ['black', 'ecommerce'] },
-  { name: 'Shopee', emoji: '🟠', desc: 'Marketplace em crescimento', tags: ['black', 'moda', 'ecommerce'] },
-  { name: 'Magalu', emoji: '🔵', desc: 'Marketplace nacional', tags: ['black', 'ecommerce'] },
-  { name: 'Shein', emoji: '🌸', desc: 'Moda e vestuário', tags: ['moda'] },
-  { name: 'iFood', emoji: '🍔', desc: 'Delivery de nicho black e moda', tags: ['black', 'moda', 'delivery'] },
-  { name: 'Rappi', emoji: '🛵', desc: 'Delivery de nicho black e moda', tags: ['black', 'moda', 'delivery'] },
-  { name: 'Kwai', emoji: '🎬', desc: 'Vendas via vídeos curtos', tags: ['black', 'moda', 'ecommerce'] },
-  { name: 'Site Próprio', emoji: '🌐', desc: 'E-commerce proprietário', tags: ['black', 'moda', 'ecommerce'] },
+  { name: 'Mercado Livre', logo: 'https://cdn.brandfetch.io/mercadolivre.com.br/w/200/h/200', desc: 'Loja Oficial FULL e FLEX', tags: ['black', 'ecommerce'] },
+  { name: 'Shopee', logo: 'https://cdn.brandfetch.io/shopee.com/w/200/h/200', desc: 'Marketplace em crescimento', tags: ['black', 'moda', 'ecommerce'] },
+  { name: 'Magalu', logo: 'https://cdn.brandfetch.io/magazineluiza.com.br/w/200/h/200', desc: 'Marketplace nacional', tags: ['black', 'ecommerce'] },
+  { name: 'Shein', logo: 'https://cdn.brandfetch.io/shein.com/w/200/h/200', desc: 'Moda e vestuário', tags: ['moda'] },
+  { name: 'iFood', logo: 'https://cdn.brandfetch.io/ifood.com.br/w/200/h/200', desc: 'Delivery de nicho black e moda', tags: ['black', 'moda', 'delivery'] },
+  { name: 'Rappi', logo: 'https://cdn.brandfetch.io/rappi.com/w/200/h/200', desc: 'Delivery de nicho black e moda', tags: ['black', 'moda', 'delivery'] },
+  { name: 'Kwai', logo: 'https://cdn.brandfetch.io/kwai.com/w/200/h/200', desc: 'Vendas via vídeos curtos', tags: ['black', 'moda', 'ecommerce'] },
+  { name: 'Site Próprio', logo: null, desc: 'E-commerce proprietário', tags: ['black', 'moda', 'ecommerce'] },
 ];
 
 const Marketplaces = () => (
@@ -38,7 +38,12 @@ const Marketplaces = () => (
             viewport={{ once: true }}
             transition={{ delay: i * 0.06, duration: 0.4 }}
           >
-            <div className="text-4xl mb-3">{mkt.emoji}</div>
+            {mkt.logo
+              ? <div className="w-14 h-14 mb-3 rounded-xl bg-white flex items-center justify-center p-1.5">
+                  <img src={mkt.logo} alt={mkt.name} className="w-full h-full object-contain" loading="lazy" />
+                </div>
+              : <div className="w-14 h-14 mb-3 rounded-xl bg-white/10 flex items-center justify-center text-2xl">🌐</div>
+            }
             <div className="font-bold text-white text-base">{mkt.name}</div>
             <div className="text-slate-400 text-xs mt-1 mb-3">{mkt.desc}</div>
             <div className="flex flex-wrap justify-center gap-1">
