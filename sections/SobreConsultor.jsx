@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import { motion } from 'framer-motion';
 
-const badges = ['Marketplace', 'Marca Própria', 'Importação', 'Fabricação', 'Tráfego Pago', 'Google Ads', 'ML Ads', 'EAN Próprio'];
+const badges = ['Nicho Black', 'Marketplace', 'Marca Própria', 'Importação', 'Fabricação', 'Tráfego Pago', 'Google Ads', 'ML Ads', 'EAN Próprio'];
 
 const SobreConsultor = () => (
   <section id="sobre" className="py-20 px-6 bg-gray-50" aria-label="Sobre o Consultor">
@@ -43,7 +43,11 @@ const SobreConsultor = () => (
           </p>
           <div className="flex flex-wrap gap-2">
             {badges.map((b) => (
-              <span key={b} className="bg-orange-50 border border-orange-100 text-orange-600 text-xs font-semibold px-3 py-1.5 rounded-full">{b}</span>
+              <span key={b} className={`text-xs font-semibold px-3 py-1.5 rounded-full border ${
+                b === 'Nicho Black'
+                  ? 'bg-black text-white border-gray-700'
+                  : 'bg-orange-50 border-orange-100 text-orange-700'
+              }`}>{b}</span>
             ))}
           </div>
         </motion.div>

@@ -20,9 +20,14 @@ const Hero = () => (
 
     <div className="relative max-w-4xl mx-auto text-center">
       {/* Badge */}
-      <motion.div {...fadeUp(0)} className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/30 text-orange-300 text-sm font-medium px-4 py-1.5 rounded-full mb-8">
-        <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-        Especialista com experiência real em +R$5 milhões em vendas
+      <motion.div {...fadeUp(0)} className="flex flex-wrap justify-center gap-3 mb-8">
+        <span className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/30 text-orange-300 text-sm font-medium px-4 py-1.5 rounded-full">
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+          Especialista com experiência real em +R$5 milhões em vendas
+        </span>
+        <span className="inline-flex items-center gap-2 bg-black/40 border border-white/10 text-white text-sm font-bold px-4 py-1.5 rounded-full">
+          🖤 Especialista em Nicho Black
+        </span>
       </motion.div>
 
       {/* Headline */}
@@ -42,7 +47,7 @@ const Hero = () => (
         {...fadeUp(0.2)}
         className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed"
       >
-        Operação real com <strong className="text-white">3.000+ SKUs</strong>, presença em Mercado Livre, Shopee, Magalu e muito mais. Ajudo você a estruturar, crescer e escalar seu negócio digital.
+        Operação real com <strong className="text-white">3.000+ SKUs</strong>, presença em Mercado Livre, Shopee, Magalu e muito mais. Especialistas em <strong className="text-orange-400">nicho black</strong> — produtos importados exclusivos sem concorrência no Brasil.
       </motion.p>
 
       {/* CTAs */}
