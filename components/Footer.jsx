@@ -12,6 +12,7 @@ const Footer = () => (
         <a href="#resultados" className="hover:text-white transition">Resultados</a>
         <a href="#sobre" className="hover:text-white transition">Sobre</a>
         <a href="#faq" className="hover:text-white transition">FAQ</a>
+        <a href="https://blog-ecommerce-one.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Blog</a>
       </div>
       <div className="flex gap-4">
         <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
