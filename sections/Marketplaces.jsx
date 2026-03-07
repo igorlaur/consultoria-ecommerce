@@ -1,10 +1,10 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 
 const marketplaces = [
   { name: 'Mercado Livre', emoji: '🟡', desc: 'Loja Oficial FULL e FLEX', color: 'bg-yellow-50 border-yellow-200' },
   { name: 'Shopee', emoji: '🟠', desc: 'Marketplace em crescimento', color: 'bg-orange-50 border-orange-200' },
-  { name: 'Magalu', emoji: '🔵', desc: 'Marketplace nacional', color: 'bg-blue-50 border-blue-200' },
+  { name: 'Magalu', emoji: '🔵', desc: 'Marketplace nacional', color: 'bg-orange-50 border-orange-200' },
   { name: 'Shein', emoji: '🌸', desc: 'Moda e vestuário', color: 'bg-pink-50 border-pink-200' },
   { name: 'iFood', emoji: '🍔', desc: 'Delivery de alimentos', color: 'bg-red-50 border-red-200' },
   { name: 'Rappi', emoji: '🛵', desc: 'Delivery multicanal', color: 'bg-orange-50 border-orange-200' },
@@ -16,7 +16,7 @@ const Marketplaces = () => (
   <section id="marketplaces" className="py-20 px-6 bg-slate-950 text-white" aria-label="Marketplaces">
     <div className="max-w-5xl mx-auto">
       <div className="text-center mb-14">
-        <span className="text-blue-400 font-semibold text-sm uppercase tracking-widest">Plataformas</span>
+        <span className="text-orange-400 font-semibold text-sm uppercase tracking-widest">Plataformas</span>
         <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-2">Onde já atuamos</h2>
         <p className="text-slate-400 mt-3 max-w-xl mx-auto">Operação ativa nos principais marketplaces do Brasil com estratégias específicas para cada canal.</p>
       </div>

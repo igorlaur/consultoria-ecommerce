@@ -1,10 +1,10 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 
 const CTAFinal = () => (
   <section id="contato" className="py-20 px-6 bg-white" aria-label="CTA Final">
     <motion.div
-      className="max-w-3xl mx-auto bg-gradient-to-br from-slate-900 to-blue-950 rounded-3xl p-10 md:p-16 text-center shadow-2xl"
+      className="max-w-3xl mx-auto bg-gradient-to-br from-slate-900 to-neutral-950 rounded-3xl p-10 md:p-16 text-center shadow-2xl"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

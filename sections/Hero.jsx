@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 
 const fadeUp = (delay = 0) => ({
@@ -10,17 +10,17 @@ const fadeUp = (delay = 0) => ({
 const Hero = () => (
   <section
     aria-label="Hero"
-    className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white py-28 md:py-36 px-6"
+    className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-neutral-950 to-slate-900 text-white py-28 md:py-36 px-6"
   >
     {/* Background decoration */}
     <div className="absolute inset-0 pointer-events-none select-none">
-      <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-blue-600 opacity-10 rounded-full blur-3xl" />
-      <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-indigo-500 opacity-10 rounded-full blur-3xl" />
+      <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-orange-500 opacity-10 rounded-full blur-3xl" />
+      <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-orange-500 opacity-10 rounded-full blur-3xl" />
     </div>
 
     <div className="relative max-w-4xl mx-auto text-center">
       {/* Badge */}
-      <motion.div {...fadeUp(0)} className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 text-blue-300 text-sm font-medium px-4 py-1.5 rounded-full mb-8">
+      <motion.div {...fadeUp(0)} className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/30 text-orange-300 text-sm font-medium px-4 py-1.5 rounded-full mb-8">
         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
         Especialista com experiência real em +R$5 milhões em vendas
       </motion.div>
@@ -31,7 +31,7 @@ const Hero = () => (
         className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6"
       >
         Consultoria em E-commerce e{' '}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">
           Marketplaces
         </span>{' '}
         para quem quer vender de verdade
@@ -49,7 +49,7 @@ const Hero = () => (
       <motion.div {...fadeUp(0.3)} className="flex flex-col sm:flex-row gap-4 justify-center">
         <a
           href="#contato"
-          className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl text-lg shadow-lg shadow-blue-600/30 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="bg-orange-500 hover:bg-orange-500 text-white font-semibold px-8 py-4 rounded-xl text-lg shadow-lg shadow-orange-500/30 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-400"
           aria-label="Agendar Consultoria Gratuita"
         >
           Agendar Consultoria Gratuita

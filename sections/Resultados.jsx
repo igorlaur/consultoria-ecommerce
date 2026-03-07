@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 
 const metrics = [
@@ -9,12 +9,12 @@ const metrics = [
 ];
 
 const Resultados = () => (
-  <section id="resultados" className="py-20 px-6 bg-gradient-to-br from-blue-600 to-indigo-700 text-white" aria-label="Resultados">
+  <section id="resultados" className="py-20 px-6 bg-gradient-to-br from-orange-500 to-orange-700 text-white" aria-label="Resultados">
     <div className="max-w-5xl mx-auto">
       <div className="text-center mb-14">
-        <span className="text-blue-200 font-semibold text-sm uppercase tracking-widest">Números</span>
+        <span className="text-orange-200 font-semibold text-sm uppercase tracking-widest">Números</span>
         <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-2">Resultados comprovados</h2>
-        <p className="text-blue-100 mt-3 max-w-xl mx-auto">Uma operação construída do zero, com dados reais e estratégias que funcionam.</p>
+        <p className="text-orange-100 mt-3 max-w-xl mx-auto">Uma operação construída do zero, com dados reais e estratégias que funcionam.</p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {metrics.map((m, i) => (
@@ -27,8 +27,8 @@ const Resultados = () => (
             transition={{ delay: i * 0.1, duration: 0.5 }}
           >
             <div className="text-4xl font-extrabold text-white">{m.value}</div>
-            <div className="text-blue-200 font-semibold text-sm mt-1">{m.label}</div>
-            <div className="text-blue-100 text-xs mt-2 leading-relaxed">{m.desc}</div>
+            <div className="text-orange-200 font-semibold text-sm mt-1">{m.label}</div>
+            <div className="text-orange-100 text-xs mt-2 leading-relaxed">{m.desc}</div>
           </motion.div>
         ))}
       </div>

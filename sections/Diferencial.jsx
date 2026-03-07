@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 
 const diferenciais = [
@@ -16,12 +16,12 @@ const Diferencial = () => (
       <div className="flex flex-col md:flex-row md:items-center gap-12">
         {/* Left */}
         <div className="flex-1">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-widest">Diferencial</span>
+          <span className="text-orange-500 font-semibold text-sm uppercase tracking-widest">Diferencial</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-4">Por que essa consultoria é diferente?</h2>
           <p className="text-gray-500 text-lg leading-relaxed">
             Aqui você não paga por slides bonitos. Você investe em estratégias testadas e validadas em uma operação real de e-commerce multimilionária.
           </p>
-          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block bg-blue-600 text-white px-7 py-3.5 rounded-xl font-semibold shadow hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block bg-orange-500 text-white px-7 py-3.5 rounded-xl font-semibold shadow hover:bg-orange-600 transition focus:outline-none focus:ring-2 focus:ring-orange-400">
             Quero saber mais
           </a>
         </div>

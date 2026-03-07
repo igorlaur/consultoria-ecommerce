@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 
 const services = [
@@ -15,7 +15,7 @@ const ConsultingServices = () => (
   <section id="servicos" className="py-20 px-6 bg-gray-50" aria-label="Serviços de Consultoria">
     <div className="max-w-5xl mx-auto">
       <div className="text-center mb-14">
-        <span className="text-blue-600 font-semibold text-sm uppercase tracking-widest">Serviços</span>
+        <span className="text-orange-500 font-semibold text-sm uppercase tracking-widest">Serviços</span>
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">O que você vai receber</h2>
         <p className="text-gray-500 mt-3 max-w-xl mx-auto">Consultoria prática, focada em resultado. Sem teoria, sem enrolação.</p>
       </div>

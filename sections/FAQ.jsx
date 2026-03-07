@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
@@ -33,12 +33,12 @@ const FAQItem = ({ faq, idx }) => {
   return (
     <li className="border border-gray-200 rounded-2xl overflow-hidden bg-white" tabIndex={0} aria-expanded={open}>
       <button
-        className="w-full text-left px-7 py-5 flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="w-full text-left px-7 py-5 flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-400"
         onClick={() => setOpen(!open)}
         aria-controls={`faq-${idx}`}
       >
         <span className="font-semibold text-gray-900">{faq.question}</span>
-        <span className={`text-blue-600 text-xl transition-transform duration-300 ${open ? 'rotate-45' : ''}`}>+</span>
+        <span className={`text-orange-500 text-xl transition-transform duration-300 ${open ? 'rotate-45' : ''}`}>+</span>
       </button>
       <AnimatePresence initial={false}>
         {open && (
@@ -63,7 +63,7 @@ const FAQ = () => (
   <section id="faq" className="py-20 px-6 bg-gray-50" aria-label="FAQ">
     <div className="max-w-3xl mx-auto">
       <div className="text-center mb-14">
-        <span className="text-blue-600 font-semibold text-sm uppercase tracking-widest">FAQ</span>
+        <span className="text-orange-500 font-semibold text-sm uppercase tracking-widest">FAQ</span>
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Perguntas frequentes</h2>
         <p className="text-gray-500 mt-3 max-w-xl mx-auto">Tire suas dúvidas antes de agendar.</p>
       </div>
