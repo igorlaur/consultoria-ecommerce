@@ -9,7 +9,7 @@ const SEO = ({ title, description, keywords }) => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charSet="utf-8" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://consultoria.discretta.com.br" />
+    <link rel="canonical" href="https://www.escalaecommerce.com.br" />
     {/* Estruturação de dados JSON-LD */}
     <script type="application/ld+json">
       {JSON.stringify({
@@ -17,7 +17,7 @@ const SEO = ({ title, description, keywords }) => (
         '@type': 'ProfessionalService',
         name: 'Consultoria E-commerce e Marketplaces',
         description,
-        url: 'https://consultoria.discretta.com.br',
+        url: 'https://www.escalaecommerce.com.br',
         areaServed: 'Brasil',
         keywords,
         provider: {
