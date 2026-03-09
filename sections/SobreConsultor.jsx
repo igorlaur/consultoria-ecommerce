@@ -36,7 +36,7 @@ const SobreConsultor = () => (
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-4">Quem está por trás da consultoria</h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-6">
             Especialista em e-commerce e marketplaces. Responsável pela estruturação e crescimento da{' '}
-            <strong className="text-gray-900">Escala Digital Consultoria</strong> — empresa com mais de R$5 milhões em vendas, 3.000+ SKUs e presença em 9+ plataformas.
+            <strong className="text-gray-900">Escala Ecommerce Consultoria</strong> — empresa com mais de R$5 milhões em vendas, 3.000+ SKUs e presença em 9+ plataformas.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8">
             Experiência real em importação de produtos exclusivos, fabricação de marca própria, gestão de tráfego pago e operação multicanal. Cada consultoria é baseada no que realmente funciona.

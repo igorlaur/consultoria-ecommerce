@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 
 const diferenciais = [
-  { icon: '🔥', title: 'Experiência real', desc: 'Não ensinamos teoria. Aplicamos o que funciona na operação Escala Digital, com +R$5M em vendas.' },
+  { icon: '🔥', title: 'Experiência real', desc: 'Não ensinamos teoria. Aplicamos o que funciona na operação Escala Ecommerce, com +R$5M em vendas.' },
   { icon: '🌎', title: 'Produtos exclusivos', desc: 'Importamos produtos sem concorrência no Brasil, com EAN próprio e marca registrada.' },
   { icon: '🖤', title: 'Nicho Black', desc: 'Especialistas em produtos black: importação exclusiva, sem concorrência direta e alta margem.' },
   { icon: '🏪', title: 'Multicanal de verdade', desc: 'Operação simultânea em 9+ plataformas, com estratégia específica para cada canal.' },

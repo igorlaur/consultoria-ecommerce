@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 gap-6">
       <div className="flex items-center gap-2">
         <div className="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white font-black text-sm">E</div>
-        <span className="font-bold text-white">Escala <span className="text-orange-400">Digital</span></span>
+        <span className="font-bold text-white">Escala <span className="text-orange-400">Ecommerce</span></span>
       </div>
       <div className="flex gap-6 text-sm">
         <a href="#servicos" className="hover:text-white transition">Serviços</a>
@@ -23,7 +23,7 @@ const Footer = () => (
         </a>
       </div>
     </div>
-    <div className="text-center text-xs text-slate-600 mt-8 border-t border-slate-800 pt-8">© {new Date().getFullYear()} Escala Digital. Todos os direitos reservados.</div>
+    <div className="text-center text-xs text-slate-600 mt-8 border-t border-slate-800 pt-8">© {new Date().getFullYear()} Escala Ecommerce. Todos os direitos reservados.</div>
   </footer>
 );
 

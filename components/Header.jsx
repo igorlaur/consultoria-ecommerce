@@ -14,9 +14,9 @@ const Header = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-white/90 backdrop-blur'}`}>
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 focus:outline-none" aria-label="Escala Digital">
+        <a href="#" className="flex items-center gap-2 focus:outline-none" aria-label="Escala Ecommerce">
           <div className="w-9 h-9 rounded-lg bg-orange-500 flex items-center justify-center text-white font-black text-lg select-none">E</div>
-          <span className="font-bold text-lg text-gray-900 tracking-tight">Escala <span className="text-orange-500">Digital</span></span>
+          <span className="font-bold text-lg text-gray-900 tracking-tight">Escala <span className="text-orange-500">Ecommerce</span></span>
         </a>
 
         {/* Nav Desktop */}
