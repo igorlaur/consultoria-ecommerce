@@ -25,7 +25,7 @@ const Header = () => {
           <a href="#resultados" className="text-gray-600 font-medium hover:text-orange-500 transition text-sm">Resultados</a>
           <a href="#sobre" className="text-gray-600 font-medium hover:text-orange-500 transition text-sm">Sobre</a>
           <a href="#faq" className="text-gray-600 font-medium hover:text-orange-500 transition text-sm">FAQ</a>
-          <a href="https://blog-ecommerce-one.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-600 font-medium hover:text-orange-500 transition text-sm">Blog</a>
+          <a href="/blog" className="text-gray-600 font-medium hover:text-orange-500 transition text-sm">Blog</a>
         </nav>
 
         {/* CTA Desktop */}
